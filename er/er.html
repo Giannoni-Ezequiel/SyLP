@@ -8,6 +8,8 @@
 		function expresionregular(){
 			var texto=document.getElementById("nombre").value;
 		    let ER = /^(a|b)$/;
+			let DNI = /^[0-9]{2}(\.[0-9]{3}){2}$/;
+			let CUIL = /^[0-9]{2}\-[0-9]{2}((\.[0-9]{3}){2})\-[0-5]{1}$/;
 			/*
 			let ER = /^[a|b]$/;
 			let ER = /^[a-zA-Z]$/;
