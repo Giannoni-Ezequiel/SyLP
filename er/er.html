@@ -1,0 +1,55 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<meta charset="UTF-8"> 
+<head>
+    <title>ER DE PRUEBA</title>
+	<script language="javascript">
+
+		function expresionregular(){
+			var texto=document.getElementById("nombre").value;
+		    let ER = /^(a|b)$/;
+			/*
+			let ER = /^[a|b]$/;
+			let ER = /^[a-zA-Z]$/;
+			let ER = /^[a-zA-Z0-9]$/;
+			let ER = /^[a-zA-Z0-9]+$/; //permite que pueda concatenar al menos una vez, o hasta el infinito, cualquier combinacion de esos elementos
+			let ER = /^[a-zA-Z0-9]*$/; //acepta el vacio
+			let ER = /^[a-zA-Z0-9]{4}$/; // quiero exactamente {n}
+			let ER = /^[a-zA-Z0-9]{4-6}$/; // entre 4 y 6
+			let ER = /^[a-zA-Z0-9]{4,}$/; // a partir de 4, dennota concatenacion
+			let ERE = /^\d{4,}$/; \d{4,} == [0-9]
+			let ERE = /^\w{2,}$/; sadaGG_44
+			let ERE = /^\D{2,}$/; CUALQUIER COSA menos numeros, es la negacion de d
+			let ERE = /^\W{2,}$/;
+			let ERE = /^\[^R]{2,}$/; negacion de R
+			let ER = /^[A-Z][a-z]+$/; empiece si o si con una mayuscula
+			let ER = /^[A-Z][a-z]+[0-9]{2}$/; empiece si o si con una mayuscula y termine con 2 numeros
+			let ER = /^([A-Z][a-z])?$/; empiece alguna vez o ninguna vez
+			\.  // me esta obligando que vaya un punto
+			*/ 
+			document.getElementById("resultado").innerHTML =ER.test(texto);
+			//alert(ER.test(texto));
+		}
+
+	</script>
+</head>
+<body>
+<h4>JUGUEMOS CON EXPRESIONES REGULARES</h4>
+   
+
+    <form id="form1">
+
+        CADENA DE PRUEBA:<br>
+		<input type="text" name="nombre" value="" id="nombre" class="formulario">
+ 
+
+
+    </form>
+	<hr />
+    <input type="button" value="Verificar expresion regular" onclick="expresionregular()">
+	<br />
+    RESULTADO:<div id="resultado"></div>
+	
+
+</body>
+</html>
