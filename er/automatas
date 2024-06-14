@@ -1,0 +1,113 @@
+Reconoce un lenguaje
+Automata finito
+Automata infinito
+automata es un 5-upla
+grafos
+tabla de transicion, que sirve para llevarlo a un campo de trabajo, para que pueda programarlo basicamente
+Libro 2 cap 1, Libro 3 cap 1
+estados: se representa con un circulo.
+e.inicial - solo puede existir uno. marcado un menos (-) y un 0, o un a, un caracter inicial en funcion de mi alfabeto.
+e.intermedio - tiene un mas (+), o no.
+e.final/e.aceptacion - es un conjunto, formado por uno o mas. si el ultimo caracter me queda en un estado de aceptacion, entonces es aceptada la palabra.
+E = epsilon
+alfabeto
+e = {a,b,c}
+
+
+ab+aab
+
+o-  ->a->  1  ->b->  2+
+  ->a-> 1 ->a-> 2 ->b-> 3+
+
+a+ab+aab
+
+0-  ->a-> 1+  ->b->  2+
+        ->a->  3  ->b-> 
+
+clausula a*
+(reconocer epsilon, y as consecutivas)
+
+o-+ ->a->   (bucle)
+
+(ab)*
+e = {E,ab,abab,ababab,...}
+o-+ ->a-> 1 ->b-> o-+
+
+TABLA DE TRANSICIÓN
+
+     carac.alfabeto
+TT  |  a   |   b   |
+--------------------
+0+- |  1   |   3   |
+--------------------
+1   |  3   |   2   |
+-------------------
+2+  |  1   |   3   |
+--------------------
+3   |  3   |   3   |
+-------------------- deterministico, se a donde voy.
+consideramos a 3 como estado de rechazo, de este rechazo nunca salis.
+dependiendo del contexto
+
+- = Son estados de rechazo
+
+token identificador, se puede evaluar usando una tabla de transicion.
+
+->a,b->  es a o b
+
+NO DETERMINISTICO
+
+1) mas de un caracter como entrada
+E, ab, abab
+
+TT  |  a   |   b   |
+--------------------
+0+- | {1}  |   -   |
+--------------------
+1   | {1}  | {1,2} |
+-------------------
+2+  |  -   |   -   |
+--------------------
+
+
+{1,2} = Ambiguedad, conjunto de estados.
+si hay un conjunto, todos son conjuntos.
+
+Qo
+Q {}
+E 
+
+TRANSICIONES E(epsilon)
+2) ir de una transicion a otra, sin consumir caracter
+
+ab+a*ba
+
+0- ->E-> 1+- ->a-> 2 ->b-> 3+
+   ->E-> 4 (bucle a) ->b-> 5 ->a-> 6+ 
+
+epsilon nunca nunca nunca pertenece a un alfabeto
+
+TT  |  a   |   b   |   E   |
+--------------------------
+0+- |  -   |   -   | {1,4}
+--------------------------
+1   | {1}  |   -   |  -
+--------------------------
+2   |  -   |   3   |  -
+--------------------------
+3+  |  -   |   -   |  -
+--------------------------
+4   | {4}  |  {5}  |  -
+--------------------------
+5   |  6   |   -   |  -
+--------------------------
+6+  |  -   |   -   |  -
+--------------------------
+
+Algoritmo que usa transiciones epsilon, que me asegura que es un automata bien diseñado, de otra manera tengo que probar todo el automata para saber
+
+Automata minimo
+
+Algoritmo a partir de un automata obtengo una expresion regular
+
+(Vemos 4 algoritmos)
