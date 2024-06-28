@@ -1,0 +1,16 @@
+buela baca la   error lexico
+vuelta vaca la  error sintactico
+la vaca vuelta  error semantico
+
+Existen diversas variantes de la Máquina de Turing, como modelos con movimiento de espera (stay), 
+cintas infinitas en ambos extremos, cintas multipista, multicinta, así como 
+versiones deterministas y no deterministas. 
+Además, en el ámbito de la física cuántica, se ha conceptualizado la Máquina de Turing Cuántica. 
+Todas estas variantes comparten la característica fundamental de transformar un input en un output, 
+utilizando para ello un código binario compuesto por unos y ceros.
+
+
+
+FLEX
+
+REJEX

@@ -111,3 +111,38 @@ Automata minimo
 Algoritmo a partir de un automata obtengo una expresion regular
 
 (Vemos 4 algoritmos)
+
+
+Definicion formal de AFN
+Tres condiciones
+- conjunto finito de estados
+- alfabeto de caracteres
+- transicion, consumen un caracter
+Tipos
+-Automata finito no deterministico (conjuntos de estados, ambigúedad)
+-Automata finito no deterministico con Transicion Epsilon
+
+
+Enunciado
+"todos los numeros enteros (base 10) con y sin signo"
+
+
+LR = -/+[0-9]{10}
+Alfabeto E = {0,1,2,3,4,5,6,7,8,9,+,-}
+Automata
+A- -> +,- -> B -> b -> C+
+   -> d -> C+
+           C+ -> d -> C+
+
+d=0,1,2,3,4,5,6,7,8,9
+Tabla de transicion
+ TT  |  +   |   -   |   d   | otros
+----------------------------
+ 0+- |  1   |   1   |   2   |   3
+----------------------------
+ 1   |  3   |   3   |   2   |   3
+----------------------------
+ 2+  |  3   |   3   |   2   |   3
+----------------------------
+ 3   |  3   |   3   |   3   |   3
+----------------------------
