@@ -1,0 +1,18 @@
+PRÁCTICA 1 LENGUAJE C
+ENTRADA / SALIDA
+1) Escriba el programa Convertir.c que convierta mayúsculas a minúsculas o
+viceversa, dependiendo del argumento con que se invoque, dado en argv[1],
+2) Hacer un programa que con la declaración a partir de la siguiente declaración:
+float x=0.123456;
+muestre por pantalla el contenido de x con todos los decimales, con dos
+decimales y con cuatro decimales.
+3) Hacer un programa que con la declaración a partir de la siguiente declaración:
+int nro=124;
+muestre por pantalla el valor de nro en decimal, en octal y en hexadecimal.
+4) Hacer un programa donde se ingresen el número de documento y las notas de
+las dos parciales de un estudiante. Se pide mostrar por pantalla el siguiente
+informe:
+Nro. documento: 99999999
+Nota parcial 1: 99
+Nota parcial 2: 99
+Nota promedio: 99.99

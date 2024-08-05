@@ -1,0 +1,34 @@
+1. Dado el alfabeto € = {a, b, c}, escribir las palabras del lenguaje L = {x / x  € }.
+
+€ = epsilon
+
+
+
+2. ¿Cuál es la cardinalidad del lenguaje L = {, a, aa, aaa}?
+3. Describa, mediante una frase en castellano, el lenguaje del Ejercicio 2.
+4. Escriba todas las palabras del lenguaje L = {a2n+1 / 1 ≤ n ≤ 4}.
+5. Describa, mediante una frase en castellano, el lenguaje del Ejercicio (4).
+6. Sea el lenguaje L = {, a, ba, abc}. ¿Cuál es el mínimo alfabeto  sobre el que se puede
+construir este lenguaje?
+7. Sea el lenguaje L = {0, 00, 01, 010}. Escriba una concatenación de dos palabras que produce
+otra palabra de este lenguaje.
+8. Sea el lenguaje anterior. Escriba una concatenación de dos palabras que produce una cadena
+que no es palabra del lenguaje.
+9. Sea el lenguaje del Ejercicio (7). Escriba tres sublenguajes de L, de distinta cardinalidad.
+10. Sea el lenguaje L = {(ab)2n / 0 ≤ n ≤ 100}. Escriba las tres palabras de menor longitud de
+este lenguaje.
+11. Sea el lenguaje del Ejercicio (10). ¿Es cerrado bajo concatenación?
+12. Describa, mediante una frase en castellano, el lenguaje del Ejercicio (10).
+13. Describa, mediante una frase en castellano, el lenguaje L = {an
+b
+n
+/ 1 ≤ n ≤ 3000}.
+14. Sea  = {a, b} y sea el lenguaje *. ¿Cuántas palabras de longitud 3 tiene este lenguaje?
+¿Y cuántas de longitud 4?
+15. Sea el lenguaje infinito L = {abn
+/ n ≥ 1}. Escriba las tres palabras de menor longitud.
+16. Sea el lenguaje infinito L = {(ab)n
+/ n ≥ 1}. Escriba las tres palabras de menor longitud.
+17. Sea el alfabeto  = {0, 1}. Describa, por comprensión, un lenguaje infinito L sobre  (que
+no sea *).
+18. Describa, mediante una frase en castellano, el lenguaje definido en el ejercicio anterior.
